@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DiamondCut Motors</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1 class="main-title">DiamondCut Motors</h1>
+    <h5 class="main-subtitle">Cars that shines like diamonds</h5>
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="showroom.html">Showroom</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <br>
+    <section>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms and services</label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <script src="validation.js"></script>
+</body>
+</html>

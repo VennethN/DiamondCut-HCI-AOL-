@@ -1,0 +1,72 @@
+.main-title {
+    margin: auto;
+    font-size: xx-large;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .main-subtitle {
+    margin: auto;
+    font-size: small;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.186);
+    font-family:monospace;
+    font-style: italic
+  }
+
+  .menu-title {
+    margin: auto;
+    font-size: large;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .paragraph {
+    margin: auto;
+    width: 90%;
+    padding: 0px;
+    text-align:left;
+    font-family:monospace, Helvetica, sans-serif;
+  }
+
+/* Reset list styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #333;
+}
+
+/* Style each list item */
+nav ul li {
+  display: inline;
+}
+
+/* Style each link */
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size:large;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Add transition here */
+}
+
+
+/* Change color on hover */
+nav ul li a:hover {
+  opacity: 1;
+  background-color: #111;
+  transform: scale(1.1); /* Increase size to 110% */
+}
