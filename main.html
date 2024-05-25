@@ -33,7 +33,59 @@
             <p>Shining into the future with new technology</p>
         </div>
     </div>
-    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repellat explicabo impedit nostrum animi soluta sequi, nulla quae beatae quaerat quod. Quia maiores sunt magnam quis assumenda odio iste qui sed excepturi temporibus nisi quaerat, esse vitae delectus nesciunt magni numquam cumque dicta est omnis ipsam iusto blanditiis obcaecati similique. Illo, quia! Ducimus, voluptatum. Amet, molestiae consequuntur modi impedit nihil aliquid cum assumenda ipsam, nulla sit consectetur! Est minima, architecto asperiores deserunt dolores dolorum nemo reprehenderit quae eaque velit veritatis? Fuga officiis eos inventore molestias exercitationem saepe aspernatur non corrupti veniam aliquam quam vel, numquam consectetur eum amet earum sed!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class = "title-text">
+        <h1>The fastest, shiniest, and most technologically advanced automobiles</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class = "title-text">
+        <h1>Available right at your fingertips</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class = "title-text">
+        <h1>Check out our top of the line automobiles:</h1>
+    </div>
+    <ul class="top-cars-list">
+
+    </ul>
+    <div class = "title-text">
+        <h1>... and much more</h1>
+    </div>
+    <div class="title-text">
+        <h1>Check out our <a href="cars.html">cars tab</a> to learn more</h1>
+    </div>
+    <p class="paragraph">
+        Copyright @2024 DiamondMotors
+    </p>
     <script src="javascript.js"></script>
+    <script>
+        window.onload = function() {
+          var parallaxList = document.querySelector('.top-cars-list');
+          for (var i = 0; i < topCars.length; i++) {
+            var li = document.createElement('li');
+            li.className = 'parallax';
+            li.id = topCars[i];
+            li.innerHTML = '<div class="parallax-background"></div>' +
+                           '<div class="parallax-text">' +
+                           '<h1>' + carsInfo[topCars[i]].title + '</h1>' +
+                           '<p>' + carsInfo[topCars[i]].description + '</p>' +
+
+                           '</div>';
+            parallaxList.appendChild(li);
+          }
+        };
+        </script>
 </body>
 </html>

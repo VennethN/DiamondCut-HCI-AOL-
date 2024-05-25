@@ -19,39 +19,33 @@
         </ul>
     </nav>
     <br>
-    <section>
-        <h2>New Cars</h2>
-        <div class="car">
-            <img src="path_to_image" alt="Car Image">
-            <h3>Car Name</h3>
-            <p>Car Brand</p>
-        </div>
-        <!-- Repeat for each new car -->
-    </section>
-    <section>
-        <h2>Used Cars</h2>
-        <div class="car">
-            <img src="path_to_image" alt="Car Image">
-            <h3>Car Name</h3>
-            <p>Car Brand</p>
-        </div>
-        <!-- Repeat for each used car -->
-    </section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="path_to_brand_image" class="d-block w-100" alt="Brand Image">
-            </div>
-            <!-- Repeat for each brand -->
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    <div class="title-text">
+        <h1>Check out our new automobiles</h1>
     </div>
+    <div class="small-title-text">
+        <h2>Our best offerings from the 21st century</h2>
+    </div>
+    <ul class = "car-list">
+    </ul>
+    <script src="javascript.js"></script>
+    <script>
+        window.onload = function() {
+          var parallaxList = document.querySelector('.car-list');
+          for (var i = 0; i < newCars.length; i++) {
+            var li = document.createElement('li');
+            li.className = 'parallax';
+            li.id = newCars[i];
+            li.innerHTML = '<div class="parallax-background"></div>' +
+                           '<div class="parallax-text">' +
+                           '<h1>' + carsInfo[newCars[i]].title + '</h1>' +
+                           '<p>' + carsInfo[newCars[i]].description + '</p>' +
+                           '</div>' +
+                           '<div class="price-text">' +
+                            '<h2>' + carsInfo[newCars[i]].priceText + '</h2>' +
+                            '</div>';
+            parallaxList.appendChild(li);
+          }
+        };
+        </script>
 </body>
 </html>

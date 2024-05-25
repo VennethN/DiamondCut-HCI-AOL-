@@ -1,6 +1,11 @@
 
 body {
-  background-color: white;
+  background-color: #fcf2cf;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -60,21 +65,51 @@ body {
     position: relative;
 }
 #parallax1::before {
-  background-image: url("images/DiamondsCar.png");
+  background-image: url("images/car1.webp");
 }
 
 #parallax2::before {
-  background-image: url("images/DiamondCar2.png");
+  background-image: url("images/car2.webp");
   transform: scaleX(-1)
 }
+#zephyrx8::before {
+  background-image: url("images/car5.webp");
+  transform: scaleX(-1)
+}
+#veritas::before {
+  background-image: url("images/car4.webp");
+  transform: scaleX(-1)
+}
+#auroragts::before {
+  background-image: url("images/car3.webp");
+  transform: scaleX()
+}
+#nexura::before {
+  background-image: url("images/car6.webp");
+  transform: scaleX(-1)
+}
+#zenith::before {
+  background-image: url("images/car8.webp");
+  transform: scaleX()
+}
+#cobaltz1::before {
+  background-image: url("images/car9.webp");
+  transform: scaleX(-1)
+
+}
+#crimsonvortex:before{
+  background-image: url("images/car11.webp");
+  transform: scaleX()
+
+}
+
 
 .parallax::before {
   /* The image used */
   content: "";
-  background-image: url("images/DiamondsCar.png");
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,6 +125,9 @@ body {
   height: 100%;
   z-index: -1; /* Place it behind the text */
   transition: filter 0.3s ease;
+
+  /* Add a drop shadow */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .parallax:hover::before {
@@ -115,6 +153,46 @@ body {
     text-align: center;
     transition: opacity 0.3s ease; /* Add transition here */
 }
+.parallax:hover .price-text {
+  /* Make the text disappear on hover */
+  opacity: 0;
+}
+.price-text {
+  /* Position the text */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* Style the text */
+  color: #f0e4bd;
+  font-size: small;
+  font-family: Poppins, Helvetica, sans-serif;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Add transition here */
+}
+.title-text {
+  /* Position the text */
+
+  /* Style the text */
+  color: black;
+  font-size: large;
+  font-family:Poppins, Helvetica, sans-serif;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Add transition here */
+}
+.small-title-text {
+  /* Position the text */
+
+  /* Style the text */
+  color: black;
+  font-size: small;
+  font-family:Poppins, Helvetica, sans-serif;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Add transition here */
+}
+
+
 
 
 /* Reset list styles */
@@ -125,7 +203,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
 
-  background-color: #333;
+  background-color: #92886e;
 }
 
 /* Style each list item */
@@ -142,6 +220,7 @@ nav ul li a {
     opacity: 0.6;
     text-decoration: none;
     font-size:large;
+    font-family:Poppins, Helvetica, sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Add transition here */
 }
 
@@ -151,4 +230,43 @@ nav ul li a:hover {
   opacity: 1;
   background-color: #111;
   transform: scale(1.1); /* Increase size to 110% */
+}
+
+
+.top-cars-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.top-cars-list li {
+  display: inline-block;
+  width: 30%;
+  height: 20%;
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.car-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.car-list li {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin-right: 20px; /* Add some right margin for spacing */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.car-list li img {
+  width: 100%;
+  height: auto;
 }
