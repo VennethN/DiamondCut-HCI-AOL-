@@ -114,15 +114,15 @@
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768) {
     .parallax-text {
-        font-size: 1px; /* Set a minimum font size for small screens */
+        font-size: 10px; /* Set a minimum font size for small screens */
     }
 }
 
 @media (min-width: 1200px) {
     .parallax-text {
-        font-size: 36px; /* Set a maximum font size for large screens */
+        font-size: 20px; /* Set a maximum font size for large screens */
     }
 }
   .parallax:hover .price-text {

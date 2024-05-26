@@ -82,6 +82,17 @@ body, html {
   text-align: center;
   transition: opacity 0.3s ease; /* Add transition here */
 }
+.title-text.paragraph {
+    /* Position the text */
+
+    /* Style the text */
+    color: black;
+    font-size: large;
+    font-family: Poppins, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px; /* Add padding here */
+    transition: opacity 0.3s ease; /* Add transition here */
+}
 .small-title-text {
   /* Position the text */
 
@@ -133,7 +144,15 @@ nav ul li a:hover {
   transform: scale(1.1); /* Increase size to 110% */
 }
 
+.car-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
 
+}
 .top-cars-list {
   list-style-type: none;
   margin: 0;
@@ -144,6 +163,7 @@ nav ul li a:hover {
 }
 
 .top-cars-list li {
+
   display: inline-block;
   width: 40%;
   height: 20%;
@@ -200,4 +220,40 @@ nav ul li a:hover {
 
 .flipped-image {
   transform: scaleX(-1);
+}
+@media screen and (max-width: 768px) {
+  .top-cars-list li,
+  .old-car-list li,
+  .showroom-gallery-list li {
+    width: 100%; /* Make list items full width */
+  }
+
+  .old-car-list li {
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+#socialmedialist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+#socialmedialist li{
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+  margin: 20px; /* Add some margin for spacing */
+
+}
+#socialmedialist li img:hover{
+  transform: scale(1.1);
+
+}
+#socialmedialist li img{
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease; /* Add transition here */
 }

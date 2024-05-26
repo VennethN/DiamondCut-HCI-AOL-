@@ -106,7 +106,20 @@ var carsInfo = {
         description: "The future of SUVs",
         image:"../images/car-teslamodely.webp",
         priceText: "Starting at $40,000",
-    }
+    },
+    "hondaNSX": {
+        title: "Honda NSX",
+        description: "The classic, reimagined",
+        image:"../images/car-hondaNSX.webp",
+        priceText: "Starting at $157,000",
+    },
+    "bmw635csi":{
+        title: "BMW 635 CSi",
+        description: "The classic BMW",
+        image:"../images/car-bmw635csi.webp",
+        priceText: "Starting at $25,000",
+    },
+
     // Add more sections as needed
 };
 
@@ -121,7 +134,8 @@ var oldCars = [
     "porsche911",
     "hondacivic",
     "toyotacorolla",
-    "modelB",
+    "hondaNSX",
+    "bmw635csi",
 ]
 var newCars = [
     "astonmartinvalhalla",
