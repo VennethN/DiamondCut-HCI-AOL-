@@ -57,106 +57,7 @@ body, html {
   .main-logo:hover {
     transform: scale(1.1);
   }
-  .parallax {
-    /* Set a specific height */
-    min-height: 500px; 
 
-    /* Set up the container to position the text */
-    position: relative;
-}
-#parallax1::before {
-  background-image: url("images/car1.webp");
-}
-
-#parallax2::before {
-  background-image: url("images/car2.webp");
-  transform: scaleX(-1)
-}
-#zephyrx8::before {
-  background-image: url("images/car5.webp");
-  transform: scaleX(-1)
-}
-#veritas::before {
-  background-image: url("images/car4.webp");
-  transform: scaleX(-1)
-}
-#auroragts::before {
-  background-image: url("images/car3.webp");
-  transform: scaleX()
-}
-#nexura::before {
-  background-image: url("images/car6.webp");
-  transform: scaleX(-1)
-}
-#zenith::before {
-  background-image: url("images/car8.webp");
-  transform: scaleX()
-}
-#cobaltz1::before {
-  background-image: url("images/car9.webp");
-  transform: scaleX(-1)
-
-}
-#crimsonvortex:before{
-  background-image: url("images/car11.webp");
-  transform: scaleX()
-
-}
-
-
-.parallax::before {
-  /* The image used */
-  content: "";
-
-  /* Create the parallax scrolling effect */
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* Make the image darker */
-  filter: brightness(50%);
-
-  /* Position and size the pseudo-element */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Place it behind the text */
-  transition: filter 0.3s ease;
-
-  /* Add a drop shadow */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.parallax:hover::before {
-    /* Return to full brightness on hover */
-    filter: brightness(100%);
-}
-.parallax:hover .parallax-text {
-  /* Make the text disappear on hover */
-  opacity: 0;
-}
-
-.parallax-text {
-    /* Position the text */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    /* Style the text */
-    color: white;
-    font-size: xx-large;
-    font-family:Poppins, Helvetica, sans-serif;
-    text-align: center;
-    transition: opacity 0.3s ease; /* Add transition here */
-}
-.parallax:hover .price-text {
-  /* Make the text disappear on hover */
-  opacity: 0;
-}
 .price-text {
   /* Position the text */
   position: absolute;
@@ -244,12 +145,12 @@ nav ul li a:hover {
 
 .top-cars-list li {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   height: 20%;
   margin: 20px; /* Add some margin for spacing */
 }
 
-.car-list {
+.old-car-list {
   list-style-type: none;
   margin: 0;
   padding: 20px 0;
@@ -258,15 +159,45 @@ nav ul li a:hover {
   flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
 }
 
-.car-list li {
+.old-car-list li {
   display: inline-block;
-  width: 20%;
+  width: 30%;
   height: 20%;
   margin-right: 20px; /* Add some right margin for spacing */
   margin-bottom: 20px; /* Add some bottom margin for spacing */
 }
 
-.car-list li img {
+.old-car-list li img {
   width: 100%;
   height: auto;
+}
+
+.showroom-gallery-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.showroom-gallery-list li {
+  display: inline-block;
+  width: 30%;
+  height: 20%;
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.showroomgallery img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s ease; /* Add transition here */
+}
+.showroomgallery img:hover{
+  transform: scale(1.1);
+}
+
+.flipped-image {
+  transform: scaleX(-1);
 }

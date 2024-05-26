@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="../cssFolder/styling.css">
+    <link rel="stylesheet" href="../cssFolder/parallax.css">
+    <link rel="stylesheet" href="../cssFolder/carousell.css">
 </head>
 <body>
-    <img class = "main-logo" src="images/DiamondCutLogoVector.png" alt="DiamondCut Motors Logo">
+    <img class = "main-logo" src="../images/DiamondCutLogoVector.png" alt="DiamondCut Motors Logo">
     <h5 class="main-subtitle">Cars that shines like diamonds</h5>
     <nav>
         <ul>
@@ -20,6 +22,7 @@
     </nav>
     <br>
     <div class="parallax" id="parallax1">
+        <img src="../images/car11.webp">
         <div class="parallax-background"></div>
         <div class="parallax-text">
             <h1>Welcome to DiamondCut Motors</h1>
@@ -27,10 +30,11 @@
         </div>
     </div>
     <div class="parallax" id="parallax2">
+        <img class="flipped-image" src="..//images/car8.webp">
         <div class="parallax-background"></div>
         <div class="parallax-text">
             <h1>Since 1998</h1>
-            <p>Shining into the future with new technology</p>
+            <p>Luxurious cars at your fingertips.</p>
         </div>
     </div>
     <br>
@@ -69,7 +73,7 @@
     <p class="paragraph">
         Copyright @2024 DiamondMotors
     </p>
-    <script src="javascript.js"></script>
+    <script src="../javascripts/javascript.js"></script>
     <script>
         window.onload = function() {
           var parallaxList = document.querySelector('.top-cars-list');
@@ -78,6 +82,7 @@
             li.className = 'parallax';
             li.id = topCars[i];
             li.innerHTML = '<div class="parallax-background"></div>' +
+                            '<img src="' + carsInfo[topCars[i]].image + '" alt="' + carsInfo[topCars[i]].title + '">' +
                            '<div class="parallax-text">' +
                            '<h1>' + carsInfo[topCars[i]].title + '</h1>' +
                            '<p>' + carsInfo[topCars[i]].description + '</p>' +
