@@ -257,3 +257,34 @@ nav ul li a:hover {
   height: auto;
   transition: transform 0.2s ease; /* Add transition here */
 }
+
+#loginForm {
+  margin: auto;
+  width: 50%;
+  padding: 30px 20px; /* Add vertical padding here */
+  text-align: center;
+  font-family: Poppins, Helvetica, sans-serif;
+  transition: opacity 0.3s ease; /* Add transition here */
+}
+#loginForm label {
+  color: black;
+  font-size: large;
+  font-family: Poppins, Helvetica, sans-serif;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Add transition here */
+  padding: 20px 20px; /* Add vertical padding here */
+}
+#loginForm input {
+  padding: 10px 50px; /* Add vertical padding here */
+  /* Other styles */
+  /* text styles*/
+  font-size: large;
+  font-family: Poppins, Helvetica, sans-serif;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Add transition here */
+}
+
+#loginHeader{
+
+  height:15vh;
+}

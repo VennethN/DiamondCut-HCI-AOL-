@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - DiamondCut Motors</title>
     <link rel="stylesheet" href="../cssFolder/styling.css">
+    <link rel="stylesheet" href="../cssFolder/parallax.css">
 </head>
 <body>
-    <img class = "main-logo" src="images/DiamondCutLogoVector.png" alt="DiamondCut Motors Logo">
+    <img class = "main-logo" src="../images/DiamondCutLogoVector.png" alt="DiamondCut Motors Logo">
     <h5 class="main-subtitle">Cars that shines like diamonds</h5>
     <nav>
         <ul>
@@ -20,7 +21,17 @@
     </nav>
     <br>
     <section>
-        <h2>Login</h2>
+        <div class="parallax" id="loginHeader">
+            <img src="../images/DiamondCutDiamond.png">
+            <div class="parallax-background"></div>
+            <div class="parallax-text">
+                <h1>Login into an account</h1>
+                <p>To start your car shopping browsing experience</p>
+            </div>
+        </div>
+        <div class="title-text">
+            <h2>Login</h2>
+        </div>
         <form id="loginForm">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
