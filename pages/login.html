@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="../cssFolder/parallax.css">
 </head>
 <body>
-    <img class = "main-logo" src="../images/DiamondCutLogoVector.png" alt="DiamondCut Motors Logo">
-    <h5 class="main-subtitle">Cars that shines like diamonds</h5>
-    <nav>
-        <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="cars.html">Cars</a></li>
-            <li><a href="showroom.html">Showroom</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+    <header>
+        <img class = "main-logo" src="../images/DiamondCutLogoVector.png" alt="DiamondCut Motors Logo">
+        <h5 class="main-subtitle">Cars that shines like diamonds</h5>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="showroom.html">Showroom</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     <br>
     <section>
         <div class="parallax" id="loginHeader">
-            <img src="../images/DiamondCutDiamond.png">
+            <img src="../images/car-ferrariroma.webp">
             <div class="parallax-background"></div>
             <div class="parallax-text">
                 <h1>Login into an account</h1>
@@ -32,22 +34,27 @@
         <div class="title-text">
             <h2>Login</h2>
         </div>
-        <form id="loginForm">
+        <form id="loginForm" method="post">
             <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
+            <input type="text" id="username" name="username" placeholder="(5 - 20 characters)"><br>
+            <label for="email" >Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Input Email"><br>
             <label for="phone">Phone number:</label><br>
-            <input type="tel" id="phone" name="phone"><br>
+            <input type="number" id="phone" name="phone" placeholder="10-12 Digit phone number"><br>
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
+            <input type="password" id="password" name="password" placeholder="Input Password"><br>
             <label for="confirmPassword">Confirm Password:</label><br>
-            <input type="password" id="confirmPassword" name="confirmPassword"><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"><br>
             <input type="checkbox" id="terms" name="terms">
             <label for="terms">I agree to the terms and services</label><br>
-            <input type="submit" value="Submit">
+            <input type="button" value="Submit" onClick="validateData()">
         </form>
     </section>
-    <script src="validation.js"></script>
+    <footer>
+        <div class="title-text">
+            <h5>Copyright 2024 DiamondCut Motors</h5>
+        </div>
+    </footer>
+    <script src="../javascripts/validation.js"></script>
 </body>
 </html>
